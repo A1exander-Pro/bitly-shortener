@@ -22,3 +22,4 @@ in the directory of your main.py file ex.: <br>
 ## Project Goals
 The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).
 
+Russian language [README](https://github.com/A1exander-Pro/bitly-shorterer/blob/main/README_RU.md)
