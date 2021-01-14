@@ -9,7 +9,7 @@
 - Для изоляции проекта рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html)
 - Python3 уже должен быть установлен. Использоуйте pip (или pip3, если есть конфликт с Python2) для установки зависимостей:<br>
 ```pip install -r requirements.txt```
-- Далее нужно зарегистрироваться на [bit.ty](https://app.bitly.com/) и сгенерировать  `"Generic Access Token"` .
+- Далее нужно зарегистрироваться на [bit.ly](https://app.bitly.com/) и сгенерировать  `"Generic Access Token"` .
 - Также вам нужно создать .env файл и прописать ваш `"Generic Access Token"` следующим образом:<br> 
 ```BITLY_AUTH_TOKEN=************************```
 - Для создания короткой ссылки нужно в консоле(терминале) вставить ссылку, которую нужно сократить (пример ссылки: https://www.google.com)  
