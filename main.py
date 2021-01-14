@@ -49,8 +49,7 @@ def create_parser():
 
 if __name__ == "__main__":
     dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-    if os.path.exists(dotenv_path):
-        load_dotenv(dotenv_path)
+    load_dotenv(dotenv_path)
     bitly_auth_token = os.environ.get("BITLY_AUTH_TOKEN")
     headers = {'Authorization': f'Bearer {bitly_auth_token}', 'Content-Type': 'application/json', }
     parser = create_parser()
