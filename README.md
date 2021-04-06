@@ -1,4 +1,4 @@
-# Bitly url shorterer 
+# Bitly url shortener 
 
 This project is made for short your links into short [bit.ly](https://app.bitly.com/) links, and count clicks from existing [bit.ly](https://app.bitly.com/) link.<br>
 
