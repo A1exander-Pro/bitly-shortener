@@ -7,7 +7,7 @@ import argparse
 
 def shorten_url(main_url, headers):
     api_url = 'https://api-ssl.bitly.com/v4/bitlinks'
-    payload = {"long_url": main_url, "domain": "bit.ly", }
+    payload = {'long_url': main_url, 'domain': 'bit.ly', }
     response = requests.post(api_url, headers=headers, json=payload)
     response.raise_for_status()
     short_link = response.json()['link']
@@ -47,10 +47,10 @@ def create_parser():
     return parser
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
     load_dotenv(dotenv_path)
-    bitly_auth_token = os.environ.get("BITLY_AUTH_TOKEN")
+    bitly_auth_token = os.environ.get('BITLY_AUTH_TOKEN')
     headers = {'Authorization': f'Bearer {bitly_auth_token}', 'Content-Type': 'application/json', }
     parser = create_parser()
     args = parser.parse_args()
