@@ -8,15 +8,23 @@
 ## Установка: 
 - Для изоляции проекта рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html)
 - Python3 уже должен быть установлен. Использоуйте pip (или pip3, если есть конфликт с Python2) для установки зависимостей:   
-```pip install -r requirements.txt```
+```python
+pip install -r requirements.txt
+```
 - Далее нужно зарегистрироваться на [bit.ly](https://app.bitly.com/) и сгенерировать  `"Generic Access Token"` .
 - Также вам нужно создать ```.env``` файл и прописать ваш `"Generic Access Token"` следующим образом:    
-```BITLY_AUTH_TOKEN=************************```
+```python
+BYTLY_AUTH_TOKEN=************************
+```
 - Для создания короткой ссылки нужно в консоле(терминале) вставить ссылку, которую нужно сократить (пример ссылки: https://www.google.com)  
 в директории, где находится основной файл ```main.py```, например.:   
-```your_directory your_username$ python3 main.py https://www.google.com```  
+```python
+your_directory your_username$ python3 main.py https://www.google.com
+```  
 - Для подсчета переходов по ссылке необходимо сделать тоже самое, только вместо длинной ссылки вставить уже существующую короткую ссылку [bit.ly](https://app.bitly.com/), например:   
-```your_directory your_username$ python3 main.py  https://bit.ly/3aRxoV```
+```python    
+ your_directory your_username$ python3 main.py  https://bit.ly/3aRxoV
+ ```
 ---
 
 ## Project Goals
